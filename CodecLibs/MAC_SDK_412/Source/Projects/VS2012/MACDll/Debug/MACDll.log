@@ -1,0 +1,11 @@
+﻿Build started 13/10/2013 12:32:53 PM.
+     1>Project "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\codec\monkey\MAC_SDK_412\Source\Projects\VS2012\MACDll\MACDll.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\..\..\Shared /I..\..\..\MACLib /I"..\..\..\Third Party\atlmfc\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _VC80_UPGRADE=0x0710 /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Yc"stdafx.h" /Fp"Debug\MACDll.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\MACDll\stdafx.cpp
+         stdafx.cpp
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\atlmfc\include\atlwinverapi.h(29): fatal error C1189: #error :  This file requires _WIN32_WINNT to be #defined at least to 0x0403. Value 0x0501 or higher is recommended.
+     1>Done Building Project "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\codec\monkey\MAC_SDK_412\Source\Projects\VS2012\MACDll\MACDll.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.74

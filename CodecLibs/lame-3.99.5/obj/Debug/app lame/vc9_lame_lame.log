@@ -1,0 +1,37 @@
+﻿Build started 16/10/2013 8:45:14 PM.
+     1>Project "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\vc9_lame_lame.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../ /I../mpglib /I../libmp3lame /I../include /Zi /nologo /W4 /WX- /Od /Oy- /D _DEBUG /D WIN32 /D _WIN32 /D _CONSOLE /D _WINDOWS /D HAVE_MPGLIB /D HAVE_CONFIG_H /D TAKEHIRO_IEEE754_HACK /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_DEPRECATED /GF /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\\" /Fd"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\vc110.pdb" /FR"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\\" /Gd /TC /wd4995 /wd4996 /analyze- /errorReport:prompt ..\frontend\brhist.c ..\frontend\console.c ..\frontend\get_audio.c ..\frontend\lame_main.c ..\frontend\lametime.c ..\frontend\main.c ..\frontend\parse.c ..\frontend\timestatus.c
+         brhist.c
+         console.c
+         get_audio.c
+         lame_main.c
+         lametime.c
+         main.c
+         parse.c
+         timestatus.c
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _DEBUG /D "_APP=app lame.exe" /l"0x0409" /nologo /fo"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\lame.res" ..\libmp3lame\lame.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1137,5): warning MSB8012: TargetPath(C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\app lame.exe) does not match the Linker's OutputFile property value (C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\output\Debug\lame.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1139,5): warning MSB8012: TargetName(app lame) does not match the Linker's OutputFile property value (lame). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\lame.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\\" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\app lame.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\app lame.lib" /MACHINE:X86 /SAFESEH "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\lame.res"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\brhist.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\console.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\get_audio.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\lame_main.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\lametime.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\main.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\parse.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\timestatus.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\output\Debug\libmpghip-static.lib"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\output\Debug\libmp3lame-static.lib"
+         vc9_lame_lame.vcxproj -> C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\app lame.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\bscmake.exe /nologo /o"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\app lame.bsc" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\brhist.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\console.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\get_audio.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\lame_main.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\lametime.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\main.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\parse.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\app lame\timestatus.sbr"
+     1>Done Building Project "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\vc9_lame_lame.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:24.14

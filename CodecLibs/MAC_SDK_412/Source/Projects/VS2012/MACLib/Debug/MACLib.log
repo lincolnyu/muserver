@@ -1,0 +1,114 @@
+﻿Build started 1/11/2013 9:25:01 AM.
+     1>Project "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer.git\CodecLibs\MAC_SDK_412\Source\Projects\VS2012\MACLib\MACLib.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\..\Shared /ZI /nologo /W3 /WX- /Od /Oy- /D PLATFORM_WINDOWS /D WIN32 /D _DEBUG /D _LIB /D _VC80_UPGRADE=0x0710 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\MACLib\APESimple.cpp ..\..\..\MACLib\MACLib.cpp ..\..\..\MACLib\APECompress.cpp ..\..\..\MACLib\APECompressCore.cpp ..\..\..\MACLib\APECompressCreate.cpp ..\..\..\MACLib\BitArray.cpp ..\..\..\MACLib\APEDecompress.cpp "..\..\..\MACLib\Old\Anti-Predictor.cpp" ..\..\..\MACLib\Old\AntiPredictorExtraHigh.cpp ..\..\..\MACLib\Old\AntiPredictorFast.cpp ..\..\..\MACLib\Old\AntiPredictorHigh.cpp ..\..\..\MACLib\Old\AntiPredictorNormal.cpp ..\..\..\MACLib\Old\APEDecompressCore.cpp ..\..\..\MACLib\Old\APEDecompressOld.cpp ..\..\..\MACLib\Old\UnBitArrayOld.cpp ..\..\..\MACLib\Old\UnMAC.cpp ..\..\..\MACLib\UnBitArray.cpp ..\..\..\MACLib\UnBitArrayBase.cpp ..\..\..\MACLib\APEHeader.cpp ..\..\..\MACLib\APEInfo.cpp ..\..\..\MACLib\APELink.cpp ..\..\..\MACLib\APETag.cpp ..\..\..\MACLib\WAVInputSource.cpp ..\..\..\MACLib\..\Shared\CharacterHelper.cpp ..\..\..\MACLib\..\Shared\CircleBuffer.cpp ..\..\..\MACLib\..\Shared\GlobalFunctions.cpp ..\..\..\MACLib\MACProgressHelper.cpp ..\..\..\MACLib\MD5.cpp ..\..\..\MACLib\Prepare.cpp ..\..\..\MACLib\..\Shared\StdLibFileIO.cpp ..\..\..\MACLib\..\Shared\WinFileIO.cpp ..\..\..\MACLib\NewPredictor.cpp ..\..\..\MACLib\NNFilter.cpp
+         APESimple.cpp
+         MACLib.cpp
+         APECompress.cpp
+         APECompressCore.cpp
+         APECompressCreate.cpp
+         BitArray.cpp
+         APEDecompress.cpp
+         Anti-Predictor.cpp
+         AntiPredictorExtraHigh.cpp
+         AntiPredictorFast.cpp
+         AntiPredictorHigh.cpp
+         AntiPredictorNormal.cpp
+         APEDecompressCore.cpp
+         APEDecompressOld.cpp
+         UnBitArrayOld.cpp
+         UnMAC.cpp
+         UnBitArray.cpp
+         UnBitArrayBase.cpp
+         APEHeader.cpp
+         APEInfo.cpp
+         Generating Code...
+         Compiling...
+         APELink.cpp
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apelink.cpp(88): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(294) : see declaration of 'wcscpy'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apelink.cpp(89): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(294) : see declaration of 'wcscpy'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apelink.cpp(90): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(294) : see declaration of 'wcscpy'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apelink.cpp(94): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(294) : see declaration of 'wcscpy'
+         APETag.cpp
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apetag.cpp(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apetag.cpp(257): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apetag.cpp(370): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apetag.cpp(435): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(284) : see declaration of 'wcscat'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apetag.cpp(440): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(284) : see declaration of 'wcscat'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apetag.cpp(635): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\maclib\apetag.cpp(836): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(195) : see declaration of 'strncpy'
+         WAVInputSource.cpp
+         CharacterHelper.cpp
+         CircleBuffer.cpp
+         GlobalFunctions.cpp
+         MACProgressHelper.cpp
+         MD5.cpp
+         Prepare.cpp
+         StdLibFileIO.cpp
+         WinFileIO.cpp
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\shared\winfileio.cpp(55): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(294) : see declaration of 'wcscpy'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\shared\winfileio.cpp(131): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(294) : see declaration of 'wcscpy'
+     1>c:\users\quanb_000\documents\projects\quanbensoft\muserver.git\codeclibs\mac_sdk_412\source\shared\winfileio.cpp(150): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(294) : see declaration of 'wcscpy'
+         NewPredictor.cpp
+         NNFilter.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Debug\MACLib.lib" /NOLOGO .\Debug/APESimple.obj
+         .\Debug/MACLib.obj
+         .\Debug/APECompress.obj
+         .\Debug/APECompressCore.obj
+         .\Debug/APECompressCreate.obj
+         .\Debug/BitArray.obj
+         .\Debug/APEDecompress.obj
+         ".\Debug/Anti-Predictor.obj"
+         .\Debug/AntiPredictorExtraHigh.obj
+         .\Debug/AntiPredictorFast.obj
+         .\Debug/AntiPredictorHigh.obj
+         .\Debug/AntiPredictorNormal.obj
+         .\Debug/APEDecompressCore.obj
+         .\Debug/APEDecompressOld.obj
+         .\Debug/UnBitArrayOld.obj
+         .\Debug/UnMAC.obj
+         .\Debug/UnBitArray.obj
+         .\Debug/UnBitArrayBase.obj
+         .\Debug/APEHeader.obj
+         .\Debug/APEInfo.obj
+         .\Debug/APELink.obj
+         .\Debug/APETag.obj
+         .\Debug/WAVInputSource.obj
+         .\Debug/CharacterHelper.obj
+         .\Debug/CircleBuffer.obj
+         .\Debug/GlobalFunctions.obj
+         .\Debug/MACProgressHelper.obj
+         .\Debug/MD5.obj
+         .\Debug/Prepare.obj
+         .\Debug/StdLibFileIO.obj
+         .\Debug/WinFileIO.obj
+         .\Debug/NewPredictor.obj
+         .\Debug/NNFilter.obj
+         MACLib.vcxproj -> C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer.git\CodecLibs\MAC_SDK_412\Source\Projects\VS2012\MACLib\Debug\MACLib.lib
+       CustomBuildStep:
+         if not exist "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer.git\MuServer\lib\x86\Debug" mkdir "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer.git\MuServer\lib\x86\Debug"
+         xcopy C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer.git\CodecLibs\MAC_SDK_412\Source\Projects\VS2012\MACLib\Debug\MACLib.lib C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer.git\MuServer\lib\x86\Debug /Y
+         :VCEnd
+         C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer.git\CodecLibs\MAC_SDK_412\Source\Projects\VS2012\MACLib\Debug\MACLib.lib
+         1 File(s) copied
+     1>Done Building Project "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer.git\CodecLibs\MAC_SDK_412\Source\Projects\VS2012\MACLib\MACLib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.21

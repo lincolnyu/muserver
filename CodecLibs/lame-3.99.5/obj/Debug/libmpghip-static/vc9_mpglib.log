@@ -1,0 +1,33 @@
+﻿Build started 16/10/2013 8:44:58 PM.
+     1>Project "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\vc9_mpglib.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Performing Custom Build Step on configMS
+                 1 file(s) copied.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../libmp3lame /I../include /I.. /Zi /nologo /W4 /WX- /Od /Oy- /D _DEBUG /D _WINDOWS /D USE_LAYER_2 /D HAVE_MPGLIB /D WIN32 /D HAVE_CONFIG_H /D TAKEHIRO_IEEE754_HACK /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_DEPRECATED /GF /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\\" /Fd"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\libmpghip-static.pdb" /FR"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\\" /Gd /TC /wd4995 /wd4996 /analyze- /errorReport:prompt ..\mpglib\common.c ..\mpglib\dct64_i386.c ..\mpglib\decode_i386.c ..\mpglib\interface.c ..\mpglib\layer1.c ..\mpglib\layer2.c ..\mpglib\layer3.c ..\mpglib\tabinit.c
+         common.c
+         dct64_i386.c
+         decode_i386.c
+         interface.c
+         layer1.c
+         layer2.c
+         layer3.c
+         tabinit.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\libmpghip-static.lib" /NOLOGO "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\common.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\dct64_i386.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\decode_i386.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\interface.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\layer1.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\layer2.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\layer3.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\tabinit.obj"
+         vc9_mpglib.vcxproj -> C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\libmpghip-static.lib
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\bscmake.exe /nologo /o"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\libmpghip-static.bsc" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\common.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\dct64_i386.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\decode_i386.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\interface.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\layer1.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\layer2.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\layer3.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmpghip-static\tabinit.sbr"
+     1>Done Building Project "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\vc9_mpglib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.78

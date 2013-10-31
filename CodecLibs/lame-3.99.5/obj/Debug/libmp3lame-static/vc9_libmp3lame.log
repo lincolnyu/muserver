@@ -1,0 +1,70 @@
+﻿Build started 16/10/2013 8:45:03 PM.
+     1>Project "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\vc9_libmp3lame.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Performing Custom Build Step on configMS
+                 1 file(s) copied.
+       _NASM:
+         Assembling choose_table...
+         Assembling cpu_feat...
+         Assembling fft...
+         Assembling fft3dn...
+         Assembling fftfpu...
+         Assembling fftsse...
+         Assembling ffttbl...
+         Assembling scalar...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../mpglib /I../include /I.. /Zi /nologo /W4 /WX- /Od /Oy- /D _DEBUG /D _WINDOWS /D HAVE_MPGLIB /D WIN32 /D HAVE_CONFIG_H /D TAKEHIRO_IEEE754_HACK /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_DEPRECATED /GF /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\\" /Fd"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\libmp3lame-static.pdb" /FR"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\\" /Gd /TC /wd4995 /wd4996 /analyze- /errorReport:prompt ..\libmp3lame\bitstream.c ..\libmp3lame\encoder.c ..\libmp3lame\fft.c ..\libmp3lame\gain_analysis.c ..\libmp3lame\id3tag.c ..\libmp3lame\lame.c ..\libmp3lame\mpglib_interface.c ..\libmp3lame\newmdct.c ..\libmp3lame\presets.c ..\libmp3lame\psymodel.c ..\libmp3lame\quantize.c ..\libmp3lame\quantize_pvt.c ..\libmp3lame\reservoir.c ..\libmp3lame\set_get.c ..\libmp3lame\takehiro.c ..\libmp3lame\util.c ..\libmp3lame\vbrquantize.c ..\libmp3lame\VbrTag.c ..\libmp3lame\version.c
+         bitstream.c
+         encoder.c
+         fft.c
+         gain_analysis.c
+         id3tag.c
+         lame.c
+         mpglib_interface.c
+         newmdct.c
+         presets.c
+         psymodel.c
+         quantize.c
+         quantize_pvt.c
+         reservoir.c
+         set_get.c
+         takehiro.c
+         util.c
+         vbrquantize.c
+         VbrTag.c
+         version.c
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../mpglib /I../include /I.. /Zi /nologo /W1 /WX- /Od /Oy- /D _DEBUG /D _WINDOWS /D HAVE_MPGLIB /D WIN32 /D HAVE_CONFIG_H /D TAKEHIRO_IEEE754_HACK /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_DEPRECATED /GF /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\\" /Fd"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\libmp3lame-static.pdb" /FR"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\\" /Gd /TC /wd4995 /wd4996 /analyze- /errorReport:prompt ..\libmp3lame\tables.c
+         tables.c
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../libmp3lame /I../mpglib /I../include /I.. /Zi /nologo /W4 /WX- /Od /Oy- /D _DEBUG /D _WINDOWS /D HAVE_MPGLIB /D WIN32 /D HAVE_CONFIG_H /D TAKEHIRO_IEEE754_HACK /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_DEPRECATED /GF /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\\" /Fd"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\libmp3lame-static.pdb" /FR"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\\" /Gd /TC /wd4995 /wd4996 /analyze- /errorReport:prompt ..\libmp3lame\vector\xmm_quantize_sub.c
+         xmm_quantize_sub.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\libmp3lame-static.lib" /NOLOGO "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\bitstream.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\encoder.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\fft.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\gain_analysis.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\id3tag.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\lame.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\mpglib_interface.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\newmdct.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\presets.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\psymodel.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\quantize.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\quantize_pvt.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\reservoir.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\set_get.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\tables.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\takehiro.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\util.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\vbrquantize.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\VbrTag.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\version.obj"
+         "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\xmm_quantize_sub.obj"
+         vc9_libmp3lame.vcxproj -> C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\output\Debug\libmp3lame-static.lib
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\bscmake.exe /nologo /o"C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\libmp3lame-static.bsc" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\bitstream.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\encoder.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\fft.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\gain_analysis.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\id3tag.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\lame.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\mpglib_interface.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\newmdct.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\presets.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\psymodel.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\quantize.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\quantize_pvt.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\reservoir.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\set_get.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\tables.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\takehiro.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\util.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\vbrquantize.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\VbrTag.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\version.sbr" "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\..\obj\Debug\libmp3lame-static\xmm_quantize_sub.sbr"
+     1>Done Building Project "C:\Users\quanb_000\Documents\Projects\quanbenSoft\MuServer\CodecLibs\lame-3.99.5\vc_solution\vc9_libmp3lame.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.43
