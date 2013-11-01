@@ -1,0 +1,14 @@
+.htm; text/html
+.html; text/html
+.asp; text/html
+.bmp; image/bmp
+.gif; image/gif
+.wav; audio/wav
+.ape; audio/wav
+.flac; audio/wav
+.wma; audio/wma
+.mp3; audio/mp3
+.mp4; video/mp4
+.flv; video/x-flv
+.wmv; video/x-ms-wmv
+

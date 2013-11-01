@@ -25,9 +25,9 @@ namespace MuServerCodecs
 
 	public:	// Properties
 
-		property int TotalBytes
+		property uint64_t  TotalBytes
 		{
-			int get();
+			uint64_t get();
 		}
 
 	public:	// Methods

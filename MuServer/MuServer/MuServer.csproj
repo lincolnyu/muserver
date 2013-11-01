@@ -79,7 +79,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy $(SolutionDir)..\CodecLibs\xiph\flac\objs\$(ConfigurationName)\lib\*.dll $(TargetDir) /Y</PostBuildEvent>
+    <PostBuildEvent>xcopy $(SolutionDir)..\CodecLibs\xiph\flac\objs\$(ConfigurationName)\lib\*.dll $(TargetDir) /Y
+if not exist $(TargetDir)data mkdir $(TargetDir)data
+xcopy $(ProjectDir)data\*.* $(TargetDir)data\ /Y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -274,7 +274,7 @@ namespace MuServer
                             if (!headerSent)
                             {
                                 var totalBytes = flacDecoder.TotalBytes;
-                                SendHeader(httpVersion, "audio/wav", totalBytes, " 200 OK", socket);
+                                SendHeader(httpVersion, "audio/wav", (int)totalBytes, " 200 OK", socket);
                                 headerSent = true;
                             }
                             if (read <= 0 || !SendToBrowser(dataBuffer, 0, read, socket))

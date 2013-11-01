@@ -43,7 +43,7 @@ namespace MuServer
                 {
                     sbResult.Append("<div>");
                     // TODO convert to html url string
-                    var url = (_vdir + subdir.Name).NormalToUrl();
+                    var url = _vdir + subdir.Name.NormalToUrl();
                     sbResult.AppendFormat("<a href=\"{0}/\">{1}</a>", url, subdir.Name);
                     sbResult.Append("</div>");
                 }
@@ -52,7 +52,7 @@ namespace MuServer
                 {
                     sbResult.Append("<div>");
                     // TODO convert to html url string
-                    var url = (_vdir + file.Name).NormalToUrl();
+                    var url = _vdir + file.Name.NormalToUrl();
                     sbResult.AppendFormat("<a href=\"{0}\">{1}</a>", url, file.Name);
                     sbResult.Append("</div>");
                 }

@@ -40,7 +40,7 @@ private:	// fields
 	int _bytesWritten;
 	int _bytesRead;
 	bool _finishedWriting;
-	int _totalBytes;
+	uint64_t _totalBytes;
 
 	HANDLE _hReadEvent;
 	HANDLE _hWriteEvent;
@@ -54,7 +54,7 @@ public:
 public:	// Properties
 
 	// number of total bytes including header (based on meta-data rather than _totalBytes)
-	int TotalBytes();
+	uint64_t TotalBytes();
 
 public:	// Methods
 
@@ -226,7 +226,7 @@ void OurDecoder::metadata_callback(const ::FLAC__StreamMetadata *metadata)
 	}
 }
 
-int OurDecoder::TotalBytes()
+uint64_t OurDecoder::TotalBytes()
 {
 	return _totalSamples * _channels * (_bps/8) + 44;
 }
@@ -435,7 +435,7 @@ FlacDecoder::!FlacDecoder()
 	delete _pDec;
 }
 
-int FlacDecoder::TotalBytes::get()
+uint64_t FlacDecoder::TotalBytes::get()
 {
 	return _pDec->TotalBytes();
 }
