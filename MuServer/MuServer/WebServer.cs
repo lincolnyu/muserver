@@ -181,7 +181,7 @@ namespace MuServer
 
             /* Identifies the file name */
 
-            requestedFile = requestedFile.UrlToNormal();
+            requestedFile = requestedFile.UrlToUtf8();
 
             // If The file name is not supplied then look in the default file list
             if (requestedFile.Length == 0)
@@ -193,7 +193,7 @@ namespace MuServer
                 {
                     var flg = new FileListGenerator(dirName, localDir);
                     var html = flg.GetFileListHtml();
-                    var htmlBytes = html.ToUTF8ByteArray();
+                    var htmlBytes = html.ToUtf8ByteArray();
                     using (var memstream = new MemoryStream(htmlBytes))
                     {
                         using (var reader = new BinaryReader(memstream))
@@ -383,7 +383,7 @@ namespace MuServer
 // ReSharper disable ReturnValueOfPureMethodIsNotUsed
                         rel.TrimStart('/');
                         rel = rel.Replace('/', '\\');
-                        rel = rel.UrlToNormal();
+                        rel = rel.UrlToUtf8();
 // ReSharper restore ReturnValueOfPureMethodIsNotUsed
                         realDir = Path.Combine(mappedDir, rel);
                         break;

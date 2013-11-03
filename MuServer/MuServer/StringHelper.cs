@@ -33,9 +33,9 @@ namespace MuServer
             return source.Substring(start, end - start);
         }
 
-        public static string UrlToNormal(this string urlStr)
+        public static string UrlToUtf8(this string urlStr)
         {
-            var byteList = new List<byte>();
+            var bytes = new List<byte>();
 
             for (var i = 0; i < urlStr.Length; i++)
             {
@@ -45,47 +45,54 @@ namespace MuServer
                     var ch2 = urlStr[i + 1];
                     if (ch2 == '%')
                     {
-                        byteList.Add((byte)ch);
+                        bytes.Add((byte)ch2);
                         i++;
                         continue;
                     }
+
                     var sHex = urlStr.Substring(i+1, 2);
-                    
+                    byte b;
                     try
                     {
-                        var b = (byte) Convert.ToInt32(sHex, 16);
-                        byteList.Add(b);
+                        b = (byte) Convert.ToInt32(sHex, 16);
                         i += 2;
                     }
                     catch (Exception)
                     {
-                        byteList.Add((byte)ch);
+                        b = (byte)ch;
                     }
+                    bytes.Add(b);
                 }
                 else
                 {
-                    byteList.Add((byte)ch);
+                    bytes.Add((byte)ch);
                 }
             }
 
-            var bytes = byteList.ToArray();
-            return bytes.ByteArrayToString(Encoding.UTF8);
+            var encoding = new UTF8Encoding();
+            return encoding.GetString(bytes.ToArray());
         }
 
-        public static string NormalToUrl(this string normalStr)
+        public static string Utf8ToUrl(this string normalStr)
         {
+            var encoding = new UTF8Encoding();
+            var bytes = normalStr.ToByteArray(encoding);
+
             var sbUrl = new StringBuilder();
             foreach (var ch in normalStr)
             {
-                if (char.IsLetterOrDigit(ch) || ch == ' ' || ch == '/' || ch == '_' || ch == '.')
+                if (ch < 256 && (char.IsLetterOrDigit(ch) || ch == ' ' || ch == '/' || ch == '_' || ch == '.'))
                 {
                     sbUrl.Append(ch);
                 }
                 else
                 {
-                    var sHex = Convert.ToString((byte)ch, 16);
-                    sbUrl.Append('%');
-                    sbUrl.Append(sHex);
+                    var charBytes = Convert.ToString(ch).ToByteArray(encoding);
+                    foreach (var b in charBytes)
+                    {
+                        var s = string.Format("%{0:X2}", b);
+                        sbUrl.Append(s);
+                    }
                 }
             }
             return sbUrl.ToString();
@@ -120,13 +127,13 @@ namespace MuServer
             return encoding.GetBytes(source);
         }
 
-        public static byte[] ToUTF8ByteArray(this string source)
+        public static byte[] ToUtf8ByteArray(this string source)
         {
             var encoding = new UTF8Encoding();
             return source.ToByteArray(encoding);
         }
 
-        public static byte[] ToAscIIByteArray(this string source)
+        public static byte[] ToAsciiByteArray(this string source)
         {
             var encoding = new ASCIIEncoding();
             return source.ToByteArray(encoding);
