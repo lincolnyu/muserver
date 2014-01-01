@@ -6,9 +6,7 @@ namespace MuServer
     {
         static void Main()
         {
-// ReSharper disable ObjectCreationAsStatement
-            new WebServer();
-// ReSharper restore ObjectCreationAsStatement
+            WebServer.CreateWebServer();
         }
     }
 }

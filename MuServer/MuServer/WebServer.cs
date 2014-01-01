@@ -13,6 +13,9 @@ namespace MuServer
     {
         #region Fields
 
+        public const int DefaultPort = 5050;
+        public readonly static byte[] DefaultIpAddress = {127, 0, 0, 1};
+
         private readonly TcpListener _listener;
         private readonly AutoResetEvent _doneEvent = new AutoResetEvent(false);
         private int _numRunningThreads;
@@ -21,14 +24,14 @@ namespace MuServer
 
         #region Constructors
 
-        public WebServer(int port = 5050)
+        protected WebServer(IPAddress ipAddress, int port)
         {
             try
             {
                 //start listing on the given port
-                _listener = new TcpListener(new IPAddress(new byte[] {192, 168, 1, 88}), port);
+                _listener = new TcpListener(ipAddress, port);
                 _listener.Start();
-                Console.WriteLine("Web Server Running... Press ^C to Stop...");
+                Console.WriteLine("Web Server Running at {0}:{1}... Press ^C to Stop...", ipAddress, port);
 
                 //start the thread which calls the method 'StartListen'
                 Fork();
@@ -51,6 +54,86 @@ namespace MuServer
         #endregion
 
         #region Methods
+
+        public static void CreateWebServer(IPAddress ipAddress, int port = DefaultPort)
+        {
+            // ReSharper disable ObjectCreationAsStatement
+            new WebServer(ipAddress, port);
+            // ReSharper enable ObjectCreationAsStatement
+        }
+
+        public static void CreateWebServer(byte[] ipAddress, int port = DefaultPort)
+        {
+            CreateWebServer(new IPAddress(ipAddress));
+        }
+
+        public static void CreateWebServer()
+        {
+            IPAddress ipAddress = null;
+            var port = DefaultPort;
+            var loaded = false;
+            try
+            {
+                using (var sr = new StreamReader("data\\host.dat"))
+                {
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        var segs = line.Split('.');
+                        if (segs.Length != 4)
+                        {
+                            continue;
+                        }
+                        var lastSeg = segs[3];
+                        var lastSegSegs = lastSeg.Split(':');
+                        if (lastSegSegs.Length > 2)
+                        {
+                            continue;
+                        }
+                        var bytes = new byte[4];
+                        var failed = false;
+                        for (var i = 0; i < 3; i++)
+                        {
+                            if (!byte.TryParse(segs[i], out bytes[i]))
+                            {
+                                failed = true;
+                                break;
+                            }
+                        }
+                        if (!failed)
+                        {
+                            if (!byte.TryParse(lastSegSegs[0], out bytes[3]))
+                            {
+                                continue;
+                            }
+                            ipAddress = new IPAddress(bytes);
+                            if (lastSegSegs.Length == 2)
+                            {
+                                if (!int.TryParse(lastSegSegs[1], out port))
+                                {
+                                    continue;
+                                }
+                            }
+                            else
+                            {
+                                port = DefaultPort;
+                            }
+                            loaded = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+            }
+            if (!loaded)
+            {
+                ipAddress = new IPAddress(DefaultIpAddress);
+                port = DefaultPort;
+            }
+            CreateWebServer(ipAddress, port);
+        }
 
         private void Fork()
         {
@@ -166,7 +249,7 @@ namespace MuServer
             if (localDir.Length == 0)
             {
                 const string errorMessage = "<H2>Error!! Requested Directory does not exists</H2><Br>";
-                // sErrorMessage = sErrorMessage + "Please check data\\Vdirs.Dat";
+                // sErrorMessage = sErrorMessage + "Please check data\\Vdirs.dat";
 
                 // Formats The Message
                 SendHeader(httpVersion, "", errorMessage.Length, " 404 Not Found", socket);
@@ -357,7 +440,7 @@ namespace MuServer
 
             try
             {
-                var sr = new StreamReader("data\\DDirs.Dat");
+                var sr = new StreamReader("data\\DDirs.dat");
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
@@ -426,7 +509,7 @@ namespace MuServer
             try
             {
                 //Open the Vdirs.dat to find out the list virtual directories
-                var sr = new StreamReader("data\\VDirs.Dat");
+                var sr = new StreamReader("data\\VDirs.dat");
 
                 string line;
                 while ((line = sr.ReadLine()) != null)
@@ -480,7 +563,7 @@ namespace MuServer
             {
                 //Open the default.dat to find out the list
                 // of default file
-                var sr = new StreamReader("data\\Default.Dat");
+                var sr = new StreamReader("data\\Default.dat");
 
                 string line;
                 while ((line = sr.ReadLine()) != null)
@@ -520,7 +603,7 @@ namespace MuServer
             try
             {
                 //Open the Vdirs.dat to find out the list virtual directories
-                var sr = new StreamReader("data\\Mime.Dat");
+                var sr = new StreamReader("data\\Mime.dat");
 
                 string line;
                 while ((line = sr.ReadLine()) != null)
