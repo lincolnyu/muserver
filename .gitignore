@@ -12,3 +12,14 @@
 *.exe.config
 *.csproj.FileListAbsolute.*
 TemporaryGeneratedFile*.*
+
+
+CodecLibs/MAC_SDK_412/Source/Projects/VS2012/MACLib/Debug/
+CodecLibs/MAC_SDK_412/Source/Projects/VS2012/MACLib/Release/
+MuServer/CodecTester/obj/
+MuServer/Debug/
+MuServer/Release/
+MuServer/MuseCodecs/Debug/
+MuServer/MuseCodecs/Release/
+MuServer/bin/
+*.VC.db
